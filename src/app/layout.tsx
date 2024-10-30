@@ -8,6 +8,17 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Jaskirat Anand - Portfolio",
   description: "Portfolio Website",
+  openGraph: {
+    images: [
+      {
+        url: "https://i.postimg.cc/9fW4kw3W/Jaskirat-Anand-Portfolio.png",
+        width: 1280,
+        height: 720,
+        alt: "Jaskirat Anand Portfolio Preview Image",
+      },
+    ],
+    locale: "en_US",
+  }
 };
 
 const poppins = Poppins({
