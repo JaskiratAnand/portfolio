@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jaskiratanand.vercel.app
+
+# Sitemaps
+Sitemap: https://jaskiratanand.vercel.app/sitemap.xml

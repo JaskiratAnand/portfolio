@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     ],
     locale: "en_US",
     type: "website",
-  }
+  },
 };
 
 const poppins = Poppins({
