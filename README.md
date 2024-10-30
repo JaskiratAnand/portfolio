@@ -43,3 +43,12 @@ Website Link: [jaskiratanand.vercel.app](https://jaskiratanand.vercel.app/)
     ```bash
     yarn dev
     ```
+## Screenshots
+
+![Screenshot (470)](https://github.com/user-attachments/assets/7227028c-c0c2-4482-8e95-aedc8b83a900)
+
+![Screenshot (468)](https://github.com/user-attachments/assets/44b56a11-f874-4eba-b078-cf646fcaaa8d)
+
+![Screenshot (469)](https://github.com/user-attachments/assets/d050afe2-bdd2-44f5-8f09-d553f8e4c8b0)
+
+![Screenshot (471)](https://github.com/user-attachments/assets/2cc47720-dc26-4523-8d11-64637e6af90a)
