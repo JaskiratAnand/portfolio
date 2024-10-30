@@ -1,10 +1,17 @@
 "use client"
 
-import { memo } from "react";
+import { memo, useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
 const ThemeToggle = memo(() => {
   const { setTheme, resolvedTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
 
   return (
     <button

@@ -62,7 +62,6 @@ const ProjectCard = memo(({ project }: {
               width={300}
               height={200}
               quality={85}
-              priority={true}
               className="rounded-xl max-w-[300px] max-h-[200px] object-cover"
               onClick={openPreview}
             />
@@ -83,7 +82,7 @@ const ProjectCard = memo(({ project }: {
                   height={850}
                   quality={85}
                   priority={true}
-                  className="rounded-xl"
+                  className="rounded-xl w-auto"
                 />
                 <button
                   onClick={closePreview}
