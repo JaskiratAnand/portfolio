@@ -8,7 +8,7 @@ const ProjectsListButton = memo(() => {
   return (
     <button
       type="button"
-      className="text-blue-500 hover:font-medium text-base border rounded-full px-3 py-1 bg-neutral-100 dark:bg-neutral-700 dark:border-neutral-500 hover:bg-neutral-300 dark:hover:bg-neutral-800"
+      className="border py-2 px-3 md:px-4 text-sm md:text-base rounded-lg bg-black dark:bg-white text-white dark:text-black border-transparent hover:text-neutral-100 hover:dark:text-neutral-900 hover:bg-neutral-700 hover:dark:bg-neutral-400 dark:hover:text-white active:dark:bg-neutral-800 active:bg-neutral-200 transition-all duration-100"
       onClick={() => router.push("/projects-list")}
     >See Projects List</button>
   )
