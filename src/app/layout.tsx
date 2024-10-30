@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   title: "Jaskirat Anand - Portfolio",
   description: "Portfolio Website",
   openGraph: {
+    siteName: "Jaskirat Anand - Portfolio",
+    url: "https://jaskiratanand.vercel.app",
     images: [
       {
         url: "https://i.postimg.cc/9fW4kw3W/Jaskirat-Anand-Portfolio.png",
@@ -18,6 +20,7 @@ export const metadata: Metadata = {
       },
     ],
     locale: "en_US",
+    type: "website",
   }
 };
 
