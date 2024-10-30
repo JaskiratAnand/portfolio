@@ -79,8 +79,9 @@ const ProjectCard = memo(({ project }: {
                 <Image
                   src={project.img}
                   alt={project.title}
-                  height={800}
+                  height={850}
                   quality={85}
+                  priority={true}
                   className="rounded-xl"
                 />
                 <button
