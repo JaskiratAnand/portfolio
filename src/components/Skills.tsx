@@ -26,7 +26,7 @@ const SkillsList = memo(({ name, list }: {
   return (
     <div className="md:flex flex-row items-center pb-2">
       {name}:
-      <div className="w-full overflow-scroll py-1 mx-2">
+      <div className="w-full overflow-scroll scrollbar-hidden py-1 mx-2">
         {list.map((skill, id) => (
           <span
             key={id}

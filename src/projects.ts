@@ -3,6 +3,7 @@ import { StaticImageData } from 'next/image';
 import quizrrImg from '@/public/images/projects/quizrr.png'
 import wallsImg from '@/public/images/projects/walls.jpg'
 import cashAppImage from '@/public/images/projects/cash-app.png'
+import goSocialImg from '@/public/images/projects/go-social.png'
 
 export const top_projects: {
   title: string;
@@ -12,6 +13,13 @@ export const top_projects: {
   live_link?: string;
   tech_tags: string[];
 }[] = [
+  {
+    title: "Go Social",
+    description: "A social networking site built using Golang",
+    img: goSocialImg,
+    github_repo: "https://github.com/JaskiratAnand/go-social",
+    tech_tags: ["Golang", "Goose", "SQLC", "APIs"]
+  }, 
   {
     title: "Quizrr JEE",
     description: "A JEE Mock test website in Next.js",
@@ -44,6 +52,27 @@ export const projects_list: {
   date: string;
   tech_tags: string[];
 } [] = [
+  {
+    title: "Go Social",
+    description: "A social networking site built using Golang.",
+    github_repo: "https://github.com/JaskiratAnand/go-social",
+    date: "Jan 2024",
+    tech_tags: ["Golang", "Chi-Router", "Goose", "SQLC"]
+  }, 
+  {
+    title: "RSS Aggregator",
+    description: "View all your favorite RSS Feeds at one place",
+    github_repo: "https://github.com/JaskiratAnand/rss-aggregator",
+    date: "Dec 2024",
+    tech_tags: ["Golang", "Chi-Router", "SQLC", "Goose"]
+  }, 
+  {
+    title: "AI Website builder",
+    description: "AI website builder that uses LLM to help users describe and generate websites seamlessly.",
+    github_repo: "https://github.com/JaskiratAnand/ai-website-builder",
+    date: "Nov 2024",
+    tech_tags: ["TypeScript", "ClaudeAPI", "WebContainers", "WebSockets"]
+  }, 
   {
     title: "Portfolio - Jaskirat Anand",
     description: "Portfolio website built in Next.js",

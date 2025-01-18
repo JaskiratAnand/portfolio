@@ -86,7 +86,7 @@ export const skillsData: {
     "Next.js", "TypeScript", "React.js", "JavaScript", "Python", "HTML", "TailwindCSS"
   ],
   backend: [
-    "Node.js", "Express.js", "Fastify", "Django", "Flask", "Hono"
+    "Golang", "Node.js", "Express.js", "Fastify", "Django", "Flask", "Hono"
   ],
   databases: [
     "MongoDB", "PostgreSQL", "MySQL", "Prisma", "Firebase", "Supabase"

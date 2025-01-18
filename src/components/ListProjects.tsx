@@ -11,7 +11,7 @@ const ListProjects = memo(() => {
           <h2 className="text-xl font-semibold">{project.title}</h2>
           <p className="text-sm text-neutral-800 dark:text-neutral-300 bg-red text-pretty pt-1 overflow-hidden line-clamp-2 leading-6">{project.description}</p>
 
-          <div className="mt-1 py-2 overflow-scroll" >
+          <div className="mt-1 py-2 overflow-scroll scrollbar-hidden" >
             {project.tech_tags.map((tag, id) => (
               <span
                 key={id}
