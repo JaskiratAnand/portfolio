@@ -17,12 +17,12 @@ const WorkExperience = memo(() => {
             <div className="py-1 italic text-sm">{workExp.company}</div>
             <ul className="py-1 text-sm list-disc">
               {
-                workExp.description.map((desc, index) => (
+                workExp.description? workExp.description.map((desc, index) => (
                   <li
                     key={index}
                     className="text-pretty pb-1 ml-4"
                   >{desc}</li>
-                ))
+                )): null
               }
             </ul>
           </div>

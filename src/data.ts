@@ -5,8 +5,14 @@ export const workExperienceData:
   from: string;
   till: string;
   company: string;
-  description: string[];
+  description?: string[];
 }[] = [
+  {
+    role: "Frontend Developer",
+    from: "Feb 2025",
+    till: "Present",
+    company: "ANRX Solutions",
+  },
   {
     role: "Full Stack Developer Freelancer",
     from: "May 2024",

@@ -4,6 +4,7 @@ import "./globals.css";
 import Providers from "./providers";
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/Footer";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   title: "Jaskirat Anand - Portfolio",
@@ -44,6 +45,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </Providers>
+        <SpeedInsights />
       </body>
     </html>
   );
