@@ -1,9 +1,10 @@
-import { StaticImageData } from 'next/image';
+import { StaticImageData } from "next/image";
 
-import quizrrImg from '@/public/images/projects/quizrr.png'
-import wallsImg from '@/public/images/projects/walls.jpg'
-import cashAppImage from '@/public/images/projects/cash-app.png'
-import goSocialImg from '@/public/images/projects/go-social.png'
+import quizrrImg from "@/public/images/projects/quizrr.webp";
+import wallsImg from "@/public/images/projects/walls.webp";
+import cashAppImage from "@/public/images/projects/cash-app.webp";
+import goSocialImg from "@/public/images/projects/go-social.webp";
+import httpServerImg from "@/public/images/projects/http-server.webp";
 
 export const top_projects: {
   title: string;
@@ -14,35 +15,44 @@ export const top_projects: {
   tech_tags: string[];
 }[] = [
   {
+    title: "HTTP/1.1 Server - Golang",
+    description:
+      "Scratch implementation of an HTTP/1.1 server built using Go standard library",
+    img: httpServerImg,
+    github_repo: "https://github.com/JaskiratAnand/http-server",
+    tech_tags: ["Golang", "Stdlib", "net/tcp", "testify"],
+  },
+  {
     title: "Go Social",
     description: "A social networking site built using Golang",
     img: goSocialImg,
     github_repo: "https://github.com/JaskiratAnand/go-social",
-    tech_tags: ["Golang", "Goose", "SQLC", "APIs"]
-  }, 
+    tech_tags: ["Golang", "Goose", "SQLC", "APIs"],
+  },
   {
     title: "Quizrr JEE",
     description: "A JEE Mock test website in Next.js",
     img: quizrrImg,
     github_repo: "https://github.com/JaskiratAnand/quizrr-jee",
     live_link: "https://quizrr-jee.vercel.app/",
-    tech_tags: ["Next.js", "Typescript", "TailwindCSS", "Vercel"]
+    tech_tags: ["Next.js", "Typescript", "TailwindCSS", "Vercel"],
   },
   {
     title: "Walls",
     description: "Wallpaper app build in React Native using Expo.",
     img: wallsImg,
     github_repo: "https://github.com/JaskiratAnand/walls",
-    tech_tags: ["React Native", "Expo"]
+    tech_tags: ["React Native", "Expo"],
   },
   {
     title: "Cash-App",
-    description: "This is a simple Wallet app built using Turborepos and Next.js ",
+    description:
+      "This is a simple Wallet app built using Turborepos and Next.js ",
     img: cashAppImage,
     github_repo: "https://github.com/JaskiratAnand/cash-app",
-    tech_tags: ["Next.js", "Turborepos", "WebSockets", "TailwindCSS"]
+    tech_tags: ["Next.js", "Turborepos", "WebSockets", "TailwindCSS"],
   },
-]
+];
 
 export const projects_list: {
   title: string;
@@ -51,143 +61,207 @@ export const projects_list: {
   live_link?: string;
   date: string;
   tech_tags: string[];
-} [] = [
+}[] = [
+  {
+    title: "HTTP/1.1 Server - Golang",
+    description:
+      "Scratch implementation of an HTTP/1.1 server built using Go standard library",
+    github_repo: "https://github.com/JaskiratAnand/http-server",
+    date: "Oct 2025",
+    tech_tags: ["Golang", "Stdlib", "net/tcp", "testify"],
+  },
+  {
+    title: "AI Character Chat - RAG Implementation",
+    description:
+      "Create Historical or Fictional Characters, add data for LLM to reference and respond to user queries",
+    github_repo: "https://github.com/JaskiratAnand/ai-character-chat",
+    date: "Sept 2025",
+    tech_tags: [
+      "Langchain",
+      "RAG Chain",
+      "HuggingFaceEmbeddings",
+      "LMStudio",
+      "Python",
+    ],
+  },
   {
     title: "Go Social",
     description: "A social networking site built using Golang.",
     github_repo: "https://github.com/JaskiratAnand/go-social",
     date: "Jan 2024",
-    tech_tags: ["Golang", "Chi-Router", "Goose", "SQLC"]
-  }, 
+    tech_tags: ["Golang", "Chi-Router", "Goose", "SQLC"],
+  },
   {
     title: "RSS Aggregator",
     description: "View all your favorite RSS Feeds at one place",
     github_repo: "https://github.com/JaskiratAnand/rss-aggregator",
     date: "Dec 2024",
-    tech_tags: ["Golang", "Chi-Router", "SQLC", "Goose"]
-  }, 
+    tech_tags: ["Golang", "Chi-Router", "SQLC", "Goose"],
+  },
   {
     title: "AI Website builder",
-    description: "AI website builder that uses LLM to help users describe and generate websites seamlessly.",
+    description:
+      "AI website builder that uses LLM to help users describe and generate websites seamlessly.",
     github_repo: "https://github.com/JaskiratAnand/ai-website-builder",
     date: "Nov 2024",
-    tech_tags: ["TypeScript", "ClaudeAPI", "WebContainers", "WebSockets"]
-  }, 
+    tech_tags: ["TypeScript", "ClaudeAPI", "WebContainers", "WebSockets"],
+  },
   {
     title: "Portfolio - Jaskirat Anand",
     description: "Portfolio website built in Next.js",
     github_repo: "https://github.com/JaskiratAnand/portfolio",
     live_link: "https://jaskiratanand.vercel.app/",
     date: "Oct 2024",
-    tech_tags: ["Next.js", "TypeScript", "TailwindCSS", "SSR"]
-  }, 
+    tech_tags: ["Next.js", "TypeScript", "TailwindCSS", "SSR"],
+  },
   {
     title: "Quizrr JEE",
     description: "Test series/mock test prep web app built in Next.js",
     github_repo: "https://github.com/JaskiratAnand/quizrr-jee",
     live_link: "https://quizrr-jee.vercel.app/",
     date: "Oct 2024",
-    tech_tags: ["Next.js", "TypeScript", "PrismaORM", "PostgreSQL"]
+    tech_tags: ["Next.js", "TypeScript", "PrismaORM", "PostgreSQL"],
   },
   {
     title: "Walls - Wallpaper app",
     description: "Wallpaper app built using Expo and React Native.",
     github_repo: "https://github.com/JaskiratAnand/walls",
     date: "Oct 2024",
-    tech_tags: ["React Native", "Expo", "TypeScript"]
+    tech_tags: ["React Native", "Expo", "TypeScript"],
   },
   {
     title: "Full Stack Application Development Capstone Project",
-    description: "Final project - IBM Full Stack Web Development Professional Certificate program on Coursera.",
-    github_repo: "https://github.com/JaskiratAnand/coursera-fullstack_developer_capstone",
+    description:
+      "Final project - IBM Full Stack Web Development Professional Certificate program on Coursera.",
+    github_repo:
+      "https://github.com/JaskiratAnand/coursera-fullstack_developer_capstone",
     date: "Sept 2024",
-    tech_tags: ["React.js", "JavaScript", "Python",  "Django", "Mongoose", "MongoDB"]
+    tech_tags: [
+      "React.js",
+      "JavaScript",
+      "Python",
+      "Django",
+      "Mongoose",
+      "MongoDB",
+    ],
   },
   {
     title: "Cash App",
-    description: "Wallet app built using Turborepo and NextJs. Backend is built using Fastify.",
+    description:
+      "Wallet app built using Turborepo and NextJs. Backend is built using Fastify.",
     github_repo: "https://github.com/JaskiratAnand/cash-app",
     date: "Jun 2024",
-    tech_tags: ["Next.js", "Docker", "Workflows", "Turborepos", "WebSockets", "TailwindCSS", "PostgeSQL"]
+    tech_tags: [
+      "Next.js",
+      "Docker",
+      "Workflows",
+      "Turborepos",
+      "WebSockets",
+      "TailwindCSS",
+      "PostgeSQL",
+    ],
   },
   {
     title: "Medium - Blogging Site",
-    description: "Blogging website. Using clouflare workers for serverless backend.",
+    description:
+      "Blogging website. Using clouflare workers for serverless backend.",
     github_repo: "https://github.com/JaskiratAnand/medium-cloudflare",
-    live_link : "https://medium-cloudflare-two.vercel.app/",
+    live_link: "https://medium-cloudflare-two.vercel.app/",
     date: "May 2024",
-    tech_tags: ["React.js", "Vite", "TypeScript", "PostgreSQL", "Hono", "Serverless", "Cloudflare", "Workers"]
+    tech_tags: [
+      "React.js",
+      "Vite",
+      "TypeScript",
+      "PostgreSQL",
+      "Hono",
+      "Serverless",
+      "Cloudflare",
+      "Workers",
+    ],
   },
   {
     title: "PrimeReads - Frontend",
-    description: "Blogging app with Stripe Integration (group project with @diljotsingh04)",
+    description:
+      "Blogging app with Stripe Integration (group project with @diljotsingh04)",
     github_repo: "https://github.com/JaskiratAnand/primereads-frontend",
-    live_link : "https://primereads.vercel.app",
+    live_link: "https://primereads.vercel.app",
     date: "May 2024",
-    tech_tags: ["React.js", "Stripe", "JavaScript", "Firebase", "TailwindCSS", "MongoDB"]
+    tech_tags: [
+      "React.js",
+      "Stripe",
+      "JavaScript",
+      "Firebase",
+      "TailwindCSS",
+      "MongoDB",
+    ],
   },
   {
     title: "Survey - Poll app",
-    description: "Survey/Poll backend application built with TypeScript, Node.js and Prisma.",
+    description:
+      "Survey/Poll backend application built with TypeScript, Node.js and Prisma.",
     github_repo: "https://github.com/JaskiratAnand/survey-poll-app",
     date: "May 2024",
-    tech_tags: ["Node.js", "Express.js", "TypeScript", "Prisma"]
+    tech_tags: ["Node.js", "Express.js", "TypeScript", "Prisma"],
   },
   {
     title: "Amazon Clone",
     description: "Amazon Website Clone",
     github_repo: "https://github.com/JaskiratAnand/amazon-clone",
     date: "April 2024",
-    tech_tags: ["React.js", "Firebase", "JavaScript"]
+    tech_tags: ["React.js", "Firebase", "JavaScript"],
   },
   {
     title: "ibm-django-final-project",
     description: "Django final project IBM - Coursera",
     github_repo: "https://github.com/JaskiratAnand/ibm-django-final-project",
     date: "Mar 2024",
-    tech_tags: ["Django", "Flask", "Python"]
+    tech_tags: ["Django", "Flask", "Python"],
   },
   {
     title: "systemutil",
-    description: "Custom Linux command-line utility with various system-related functionalities.",
+    description:
+      "Custom Linux command-line utility with various system-related functionalities.",
     github_repo: "https://github.com/JaskiratAnand/systemutil",
     date: "Jan 2024",
-    tech_tags: ["Linux", "Bash", "Shell"]
+    tech_tags: ["Linux", "Bash", "Shell"],
   },
   {
     title: "Shopping App - React",
     description: "Shopping application in React",
     github_repo: "https://github.com/JaskiratAnand/ibm-coursera-shopping-app",
     date: "Jul 2023",
-    tech_tags: ["React.js", "JavaScript"]
+    tech_tags: ["React.js", "JavaScript"],
   },
   {
     title: "React Budget Application",
     description: "Budgeting application in React",
     github_repo: "https://github.com/JaskiratAnand/ejtos-react_budget_app",
     date: "Jul 2023",
-    tech_tags: ["React.js", "JavaScript", "Context"]
+    tech_tags: ["React.js", "JavaScript", "Context"],
   },
   {
     title: "Music App (Tkinter)",
     description: "A Python application to play your favourate music",
     github_repo: "https://github.com/JaskiratAnand/MusicApp-using-Tkinter",
     date: "Aug 2022",
-    tech_tags: ["Python", "Tkinter", "PIL", "Pygame", "ImageTk"]
+    tech_tags: ["Python", "Tkinter", "PIL", "Pygame", "ImageTk"],
   },
   {
     title: "Visualisation Forecasting Stock Trends using ML",
-    description: "view stocks data through Yahoo Finance & predicts their future using LSTM Model.",
-    github_repo: "https://github.com/JaskiratAnand/Visualisation-Forecasting-Stock-Trends-using-ML",
+    description:
+      "view stocks data through Yahoo Finance & predicts their future using LSTM Model.",
+    github_repo:
+      "https://github.com/JaskiratAnand/Visualisation-Forecasting-Stock-Trends-using-ML",
     date: "Jun 2022",
-    tech_tags: ["Keras", "Python", "Matplotlib", "Pandas", "Streamlit"]
+    tech_tags: ["Keras", "Python", "Matplotlib", "Pandas", "Streamlit"],
   },
   {
     title: "Weather App",
-    description: "View weather conditions of any location around the world by using Openweather API.",
+    description:
+      "View weather conditions of any location around the world by using Openweather API.",
     github_repo: "https://github.com/JaskiratAnand/WeatherApp-Web",
-    live_link : "https://weatherapp-jaskirat.netlify.app/",
+    live_link: "https://weatherapp-jaskirat.netlify.app/",
     date: "Dec 2021",
-    tech_tags: ["Node.js", "Express.js", "JavaScript", "RestfulAPI"]
-  }
-]
+    tech_tags: ["Node.js", "Express.js", "JavaScript", "RestfulAPI"],
+  },
+];

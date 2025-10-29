@@ -1,6 +1,4 @@
-
-export const workExperienceData:
-{
+export const workExperienceData: {
   role: string;
   from: string;
   till: string;
@@ -8,10 +6,15 @@ export const workExperienceData:
   description?: string[];
 }[] = [
   {
-    role: "Frontend Developer",
+    role: "Fullstack Developer",
     from: "Feb 2025",
     till: "Present",
     company: "ANRX Solutions",
+    description: [
+      "Project Lead on JMJ Financials Project - Led project to a successful production launch",
+      "Built and optimized backend APIs, business logic, and database schemas, improving system performance, scalability, and reliability.",
+      "Upgraded a 3-year-old backend codebase by modernizing all dependencies, libraries, and tooling to their latest stable versions, improving maintainability and security.",
+    ],
   },
   {
     role: "Full Stack Developer Freelancer",
@@ -20,8 +23,8 @@ export const workExperienceData:
     company: "Freelance",
     description: [
       "Developed a user-friendly product catalog website for a previously offline store, enabling the business to showcase its products online using React, Firebase & optimised it for SEO.",
-      "Built a responsive website using Next.js for a car rental business, improving the user experience and simplifying the booking process."
-    ]
+      "Built a responsive website using Next.js for a car rental business, improving the user experience and simplifying the booking process.",
+    ],
   },
   {
     role: "Full Stack Web Developer",
@@ -31,9 +34,9 @@ export const workExperienceData:
     description: [
       "Developed responsive and interactive web applications using MERN stack (MongoDB, Express.js, React.js, Node.js).",
       "Collaborated with cross-functional teams to design and implement new features.",
-      "Implemented best practices in code quality, testing, and deployment processes."
-    ]
-  }
+      "Implemented best practices in code quality, testing, and deployment processes.",
+    ],
+  },
 ];
 
 export const educationData: {
@@ -50,8 +53,8 @@ export const educationData: {
     from: "2020",
     till: "2024",
     college: "Chandigarh Engineering College, CGC Landran",
-    cgpa: "8.16/10"
-  }
+    cgpa: "8.16/10",
+  },
 ];
 
 export const certificationsData: {
@@ -64,21 +67,21 @@ export const certificationsData: {
     certificate: "IBM Full Stack Software Developer",
     organization: "IBM - Coursera",
     date: "Oct 2024",
-    link: "https://www.coursera.org/account/accomplishments/professional-cert/6MTUSCT8O1ED"
+    link: "https://www.coursera.org/account/accomplishments/professional-cert/6MTUSCT8O1ED",
   },
   {
     certificate: "0-100 MERN Full Stack Web Development",
     organization: "100xdevs",
     date: "Aug 2024",
-    link: "https://app.100xdevs.com/certificate/verify/1LVKNFTR"
+    link: "https://app.100xdevs.com/certificate/verify/1LVKNFTR",
   },
   {
     certificate: "Leadership Skills IIM-A",
     organization: "Coursera",
     date: "Dec 2023",
-    link: "https://coursera.org/verify/ZHG4HK9VJWH6"
-  }
-]
+    link: "https://coursera.org/verify/ZHG4HK9VJWH6",
+  },
+];
 
 export const skillsData: {
   frontend: string[];
@@ -89,21 +92,32 @@ export const skillsData: {
   tools: string[];
 } = {
   frontend: [
-    "Next.js", "TypeScript", "React.js", "JavaScript", "Python", "HTML", "TailwindCSS"
+    "Next.js",
+    "TypeScript",
+    "React.js",
+    "JavaScript",
+    "Python",
+    "HTML",
+    "TailwindCSS",
   ],
   backend: [
-    "Golang", "Node.js", "Express.js", "Fastify", "Django", "Flask", "Hono"
+    "Golang",
+    "Node.js",
+    "Express.js",
+    "Fastify",
+    "Django",
+    "Flask",
+    "Hono",
   ],
   databases: [
-    "MongoDB", "PostgreSQL", "MySQL", "Prisma", "Firebase", "Supabase"
+    "MongoDB",
+    "PostgreSQL",
+    "MySQL",
+    "Prisma",
+    "Firebase",
+    "Supabase",
   ],
-  devops: [
-    "Docker", "Kubernetes", "AWS", "GCP", "Cloudflare", "Serverless"
-  ],
-  architecture: [
-    "Microservices", "RESTful APIs", "GraphQL"
-  ],
-  tools: [
-    "Git", "Turborepos", "CI/CD", "Agile"
-  ]
-}
+  devops: ["Docker", "Kubernetes", "AWS", "GCP", "Cloudflare", "Serverless"],
+  architecture: ["Microservices", "RESTful APIs", "GraphQL"],
+  tools: ["Git", "Turborepos", "CI/CD", "Agile"],
+};
