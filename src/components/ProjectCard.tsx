@@ -2,6 +2,8 @@
 import { memo, useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import Card from "./ui/Card";
+import Tag from "./ui/Tag";
+import LinkButton from "./ui/LinkButton";
 
 const ProjectCard = memo(
   ({
@@ -32,32 +34,15 @@ const ProjectCard = memo(
 
             <div className="mt-1 py-2 overflow-scroll scrollbar-hidden">
               {project.tech_tags.map((tag, id) => (
-                <span
-                  key={id}
-                  className="text-xs shadow-sm shadow-white dark:shadow-black bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 px-2 py-1 rounded-md mr-1"
-                >
-                  {tag}
-                </span>
+                <Tag key={id}>{tag}</Tag>
               ))}
             </div>
 
             <div className="flex flex-row gap-4 text-sm font-medium mt-3 text-blue-800 dark:text-blue-300">
-              <a
-                href={project.github_repo}
-                target="_blank"
-                className="h-7 border flex flex-col justify-center items-center px-2 py-1 shadow-sm shadow-white dark:shadow-black rounded-full bg-neutral-200 border-neutral-200 dark:bg-neutral-800 dark:border-neutral-800 hover:bg-white dark:hover:bg-neutral-700 active:bg-neutral-300 dark:active:bg-neutral-900"
-              >
-                GitHub Repo
-              </a>
+              <LinkButton text="GitHub Repo" url={project.github_repo} />
 
               {project.live_link && (
-                <a
-                  href={project.live_link}
-                  target="_blank"
-                  className="h-7 border flex flex-col justify-center items-center px-2 py-1 shadow-sm shadow-white dark:shadow-black rounded-full bg-neutral-200 border-neutral-200 dark:bg-neutral-800 dark:border-neutral-800 hover:bg-white dark:hover:bg-neutral-700 active:bg-neutral-300 dark:active:bg-neutral-900"
-                >
-                  Live Project
-                </a>
+                <LinkButton text="Live Project" url={project.live_link} />
               )}
             </div>
           </div>

@@ -1,5 +1,6 @@
 import { skillsData } from "@/data";
 import { memo } from "react";
+import Tag from "./ui/Tag";
 
 const Skills = memo(() => {
   return (
@@ -22,15 +23,12 @@ Skills.displayName = "Skills";
 const SkillsList = memo(({ name, list }: { name: string; list: string[] }) => {
   return (
     <div className="md:flex flex-row items-center pb-2">
-      {name}:
+      <span className="font-medium">{name}:</span>
       <div className="w-full overflow-scroll scrollbar-hidden py-1 mx-2">
         {list.map((skill, id) => (
-          <span
-            key={id}
-            className="px-2 py-1 rounded-md mr-1 text-xs bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200"
-          >
+          <Tag key={id}>
             <span>{skill}</span>
-          </span>
+          </Tag>
         ))}
       </div>
     </div>

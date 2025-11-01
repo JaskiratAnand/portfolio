@@ -4,7 +4,7 @@ import "./globals.css";
 import Providers from "./providers";
 import Navbar from "@/components/ui/Navbar";
 import Footer from "@/components/Footer";
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Jaskirat Anand - Portfolio",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-})
+});
 
 export default function RootLayout({
   children,
@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${poppins.className} antialiased bg-white text-black dark:bg-black dark:text-white`}
+        className={`${poppins.className} antialiased bg-neutral-200 text-black dark:bg-black dark:text-white`}
       >
         <Providers>
           <Navbar />
