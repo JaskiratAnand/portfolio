@@ -1,5 +1,6 @@
 import { memo } from "react";
 import { certificationsData } from "@/data";
+import Card from "./ui/Card";
 
 const Certifications = memo(() => {
   return (
@@ -11,7 +12,7 @@ const Certifications = memo(() => {
       <div className="mt-2 md:mt-0">
         {certificationsData.map((certification, index) => (
           <div key={index} className="mb-2 md:mb-3">
-            <div className="border border-neutral-100 dark:border-neutral-900 bg-neutral-100 dark:bg-neutral-900 shadow mb-3 p-2 px-4 rounded-xl">
+            <Card className="mb-3 p-2 px-4">
               <div className="pt-1 flex flex-col md:flex-row justify-between md:items-center">
                 <span className="flex flex-col md:flex-row text-base md:gap-1">
                   <a
@@ -36,7 +37,7 @@ const Certifications = memo(() => {
                   {certification.date}
                 </span>
               </div>
-            </div>
+            </Card>
           </div>
         ))}
       </div>

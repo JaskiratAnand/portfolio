@@ -11,7 +11,7 @@ const Education = memo(() => {
       <div className="mt-2 md:mt-0">
         {educationData.map((education, index) => (
           <div key={index} className="mb-3 md:mb-5">
-            <div className="border border-neutral-100 dark:border-neutral-900 bg-neutral-100 dark:bg-neutral-900 shadow p-2 px-4 rounded-xl">
+            <div className="border border-neutral-100 dark:border-neutral-900 bg-neutral-100 dark:bg-neutral-900 shadow-sm p-2 px-4 rounded-xl">
               <div className="pt-1 md:flex flex-row justify-between items-center">
                 <h1 className="text-lg font-medium">{`${education.degree} - ${education.specialization}`}</h1>
                 <span className="flex flex-row justify-between items-center">

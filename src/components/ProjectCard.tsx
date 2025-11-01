@@ -1,6 +1,7 @@
 "use client";
 import { memo, useState } from "react";
 import Image, { StaticImageData } from "next/image";
+import Card from "./ui/Card";
 
 const ProjectCard = memo(
   ({
@@ -21,7 +22,7 @@ const ProjectCard = memo(
     const closePreview = () => setIsPreview(false);
 
     return (
-      <div className="w-full border rounded-xl p-5 shadow bg-neutral-100 border-neutral-100 dark:bg-neutral-900 dark:border-neutral-900">
+      <Card className="p-5">
         <div className="flex flex-col-reverse md:grid grid-cols-11 grid-flow-col gap-3">
           <div className="flex flex-col md:grid col-span-6">
             <h1 className="text-xl font-semibold">{project.title}</h1>
@@ -33,7 +34,7 @@ const ProjectCard = memo(
               {project.tech_tags.map((tag, id) => (
                 <span
                   key={id}
-                  className="text-xs shadow shadow-white dark:shadow-black bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 px-2 py-1 rounded-md mr-1"
+                  className="text-xs shadow-sm shadow-white dark:shadow-black bg-neutral-200 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 px-2 py-1 rounded-md mr-1"
                 >
                   {tag}
                 </span>
@@ -44,7 +45,7 @@ const ProjectCard = memo(
               <a
                 href={project.github_repo}
                 target="_blank"
-                className="h-7 border flex flex-col justify-center items-center px-2 py-1 shadow shadow-white dark:shadow-black rounded-full bg-neutral-200 border-neutral-200 dark:bg-neutral-800 dark:border-neutral-800 hover:bg-white dark:hover:bg-neutral-700 active:bg-neutral-300 dark:active:bg-neutral-900"
+                className="h-7 border flex flex-col justify-center items-center px-2 py-1 shadow-sm shadow-white dark:shadow-black rounded-full bg-neutral-200 border-neutral-200 dark:bg-neutral-800 dark:border-neutral-800 hover:bg-white dark:hover:bg-neutral-700 active:bg-neutral-300 dark:active:bg-neutral-900"
               >
                 GitHub Repo
               </a>
@@ -53,7 +54,7 @@ const ProjectCard = memo(
                 <a
                   href={project.live_link}
                   target="_blank"
-                  className="h-7 border flex flex-col justify-center items-center px-2 py-1 shadow shadow-white dark:shadow-black rounded-full bg-neutral-200 border-neutral-200 dark:bg-neutral-800 dark:border-neutral-800 hover:bg-white dark:hover:bg-neutral-700 active:bg-neutral-300 dark:active:bg-neutral-900"
+                  className="h-7 border flex flex-col justify-center items-center px-2 py-1 shadow-sm shadow-white dark:shadow-black rounded-full bg-neutral-200 border-neutral-200 dark:bg-neutral-800 dark:border-neutral-800 hover:bg-white dark:hover:bg-neutral-700 active:bg-neutral-300 dark:active:bg-neutral-900"
                 >
                   Live Project
                 </a>
@@ -82,7 +83,7 @@ const ProjectCard = memo(
 
             {isPreview && project.img && (
               <div
-                className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 backdrop-blur-sm"
+                className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 backdrop-blur-xs"
                 onClick={closePreview}
               >
                 <div className="relative px-1">
@@ -105,7 +106,7 @@ const ProjectCard = memo(
             )}
           </div>
         </div>
-      </div>
+      </Card>
     );
   },
 );

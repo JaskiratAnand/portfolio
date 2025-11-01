@@ -7,7 +7,7 @@ const Navbar = memo(() => {
   const router = useRouter();
   return (
     <header>
-      <nav className="block w-full max-w-screen-md pt-4 px-5 mx-auto bg-white dark:bg-black bg-opacity-90 sticky top-3 md:py-3">
+      <nav className="block w-full max-w-(--breakpoint-md) pt-4 px-5 mx-auto bg-white dark:bg-black bg-opacity-90 sticky top-3 md:py-3">
         <div className="container flex flex-wrap items-center justify-between mx-auto text-slate-800">
           <span className="text sm:text-xl block cursor-pointer py-1.5 text-black dark:text-white font-medium">
             <button

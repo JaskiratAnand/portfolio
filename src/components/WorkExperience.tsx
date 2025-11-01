@@ -1,5 +1,6 @@
 import { memo } from "react";
 import { workExperienceData } from "@/data";
+import Card from "./ui/Card";
 
 const WorkExperience = memo(() => {
   return (
@@ -10,10 +11,7 @@ const WorkExperience = memo(() => {
 
       <div className="mt-2 md:mt-0">
         {workExperienceData.map((workExp, index) => (
-          <div
-            key={index}
-            className="border border-neutral-100 dark:border-neutral-900 bg-neutral-100 dark:bg-neutral-900 shadow mb-3 p-2 px-4 rounded-xl"
-          >
+          <Card key={index} className="mb-3 p-2 px-4">
             <div className="pt-1 md:flex flex-row justify-between items-center">
               <h1 className="text-xl font-medium">{workExp.role}</h1>
               <div className="text-sm">{`${workExp.from} - ${workExp.till}`}</div>
@@ -29,7 +27,7 @@ const WorkExperience = memo(() => {
                   ))
                 : null}
             </ul>
-          </div>
+          </Card>
         ))}
       </div>
     </div>

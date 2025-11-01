@@ -3,7 +3,7 @@ import Projects from '@/components/Projects';
 
 export default function Home() {
   return (
-    <div className="max-w-screen-md mx-auto p-2">
+    <div className="max-w-(--breakpoint-md) mx-auto p-2">
       <Introduction />
       <Projects />
     </div>
